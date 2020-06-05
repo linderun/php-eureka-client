@@ -6,13 +6,13 @@ A PHP client for Spring Cloud Netflix Eureka service registration and discovery.
 ## Installation
 Run
 ```
-composer require linderun/php-eureka-client
+composer require darren/php-eureka-client
 ```
 or add dependency to your composer.json file
 ```
 "require": {
     ...
-    "linderun/php-eureka-client": "^1.0"
+    "darren/php-eureka-client": "^1.0"
 }
 
 ```

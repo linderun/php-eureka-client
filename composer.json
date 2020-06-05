@@ -1,5 +1,5 @@
 {
-  "name": "linderun/php-eureka-client",
+  "name": "darren/php-eureka-client",
   "description": "A PHP client for Spring Cloud Eureka discovery server.",
   "keywords": [
     "php",
