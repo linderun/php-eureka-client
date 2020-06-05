@@ -1,0 +1,30 @@
+{
+  "name": "linderun/php-eureka-client",
+  "description": "A PHP client for Spring Cloud Eureka discovery server.",
+  "keywords": [
+    "php",
+    "php eureka client",
+    "eureka",
+    "eureka client",
+    "discovery server"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lin Darren",
+      "email": "linderun@linderun.com",
+      "homepage": "http://www.linderun.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">7.1.0",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "EurekaClient\\": "src/"
+    }
+  }
+}
