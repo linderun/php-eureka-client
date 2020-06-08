@@ -64,6 +64,14 @@ class EurekaClient
     }
 
     /**
+     * @return Container|null
+     */
+    public function getContainer()
+    {
+        return $this->container;
+    }
+
+    /**
      * @param string $message
      */
     protected function dump(string $message)
