@@ -106,4 +106,25 @@ $eurekaClient = new EurekaClient('localhost', 8080);
 
   // Query for all instances under a particular secure vip address.
   $instances = $eurekaClient->getInstancesBySecureVipAddress('secureVipAddress');
+    
+  // Fetch an instance of a service from Eureka.
+  $instance = $eurekaClient->fetchInstance($appId);
+```
+
+### 5. Discovery Strategy
+When fetching instances of a service from Eureka, you probably get a list of available instances. You can choose one of them based on your desired strategy of load balancing. For example, a Round-robin or a Random strategy might be your choice.
+Currently this library only supports RandomStrategy, but you can create your custom strategy by implementing getInstance() method of DiscoveryStrategy interface:
+```
+class RoundRobinStrategy implements DiscoveryStrategy {
+
+    public function getInstance($instances) {
+        // return an instance
+    }
+    
+}
+
+```
+Then all you have to do, is to introduce your custom strategy to EurekaClient instance:
+```
+$eurekaClient->getContainer()->setDiscoveryStrategy(new RoundRobinStrategy());
 ```
