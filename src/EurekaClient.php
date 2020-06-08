@@ -417,7 +417,7 @@ class EurekaClient
     /**
      * 按照策略返回某服务下面的一个实例
      * @param string $appId
-     * @return string
+     * @return array
      */
     public function fetchInstance(string $appId)
     {

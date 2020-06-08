@@ -6,7 +6,7 @@ interface DiscoveryStrategy
 {
     /**
      * @param array $instances
-     * @return string
+     * @return array
      */
     public function getInstance($instances);
 
