@@ -406,9 +406,9 @@ class EurekaClient
      */
     public function fetchInstances(string $appId)
     {
-        if (!empty($this->instances[$appId])) {
-            return $this->instances[$appId];
-        }
+//        if (!empty($this->instances[$appId])) {
+//            return $this->instances[$appId];
+//        }
 
         $provider = $this->container->getInstanceProvider();
 
